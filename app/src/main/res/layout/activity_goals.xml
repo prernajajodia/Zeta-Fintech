@@ -1,129 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/light_bg"
-    tools:context=".Goals">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/top"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:background="@color/light_bg"
+        tools:context=".GoalsActivity">
 
-        <soup.neumorphism.NeumorphImageButton
-            android:id="@+id/back_botton"
-            style="@style/Widget.Neumorph.ImageButton"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/left_icon"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <soup.neumorphism.NeumorphImageButton
-            android:id="@+id/notif_button"
-            style="@style/Widget.Neumorph.ImageButton"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/ic_notification"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <soup.neumorphism.NeumorphImageButton
+                android:id="@+id/back_botton"
+                style="@style/Widget.Neumorph.ImageButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/left_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/goals"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-light"
-        android:paddingStart="35dp"
-        android:text="@string/Goals"
-        android:textColor="@color/dark_text"
-        android:textSize="39sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top" />
+            <soup.neumorphism.NeumorphImageButton
+                android:id="@+id/notif_button"
+                style="@style/Widget.Neumorph.ImageButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_notification"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <View
-        android:id="@+id/line"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="6.5dp"
-        android:layout_marginEnd="20dp"
-        android:background="@color/dark_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/goals" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="10dp"
-        android:clipChildren="false"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/line">
+        <TextView
+            android:id="@+id/goals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="35dp"
+            android:text="@string/Goals"
+            android:textColor="@color/dark_text"
+            android:textSize="39sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/top" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="6.5dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/dark_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/goals" />
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/pressed_card"
             style="@style/Widget.Neumorph.CardView"
             android:layout_width="400dp"
-            android:layout_height="300dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line"
+            app:neumorph_shapeType="pressed">
 
-            app:neumorph_shapeType="pressed"
-
-            >
-
-            <soup.neumorphism.NeumorphCardView
-                style="@style/Widget.Neumorph.CardView"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp"
-                android:textAlignment="center"
-                app:neumorph_shapeType="pressed"
-                >
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
 
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/no_background"
-                    android:hint="₹ 101111"
-                    android:textSize="36sp"
-                    android:textStyle="bold"
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Your Savings"
                     android:textColor="@color/dark_text"
-                    android:paddingStart="10dp"
-                    android:paddingEnd="10dp"
+                    android:textSize="30sp" />
+
+                <soup.neumorphism.NeumorphCardView
+                    style="@style/Widget.Neumorph.CardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
                     android:textAlignment="center"
-                    android:textCursorDrawable="@drawable/cursor" />
-            </soup.neumorphism.NeumorphCardView>
+                    app:neumorph_shapeType="pressed">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/no_background"
+                        android:hint="₹ 101111"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_text"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
+
+                </soup.neumorphism.NeumorphCardView>
+
+                <soup.neumorphism.NeumorphButton
+                    style="@style/Widget.Neumorph.Button"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/ic_add"
+                    android:text="Add Goals"
+                    android:textColor="@color/dark_text"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
         </soup.neumorphism.NeumorphCardView>
 
+        <TextView
+            android:id="@+id/user_goals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="35dp"
+            android:text="Prerna's Goals"
+            android:textColor="@color/dark_text"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pressed_card" />
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/goals_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_goals"
+            tools:listitem="@layout/activity_goals_card" />
 
-
-
-
-
-
-    </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
 
 

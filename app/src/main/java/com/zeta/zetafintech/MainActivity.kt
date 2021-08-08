@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        Utils.blackIconsStatusBar(this, R.color.temp_bg)
+//        Utils.blackIconsStatusBar(this, R.color.temp_bg)
     }
 }
 
