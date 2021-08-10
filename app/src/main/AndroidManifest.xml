@@ -9,22 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ZetaFinTech">
-        <activity
-            android:name=".MissionActivity"
-            android:exported="true">
+        <activity android:name=".ReceivePaymentActivity"></activity>
+        <activity android:name=".MakePaymentActivity" />
+        <activity android:name=".HomeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ProductActivity" />
+        <activity android:name=".RedeemActivity" />
+        <activity android:name=".EarnActivity" />
+        <activity
+            android:name=".MissionActivity"
+            android:exported="true" />
         <activity
             android:name=".MissionPopUpActivity"
             android:exported="true" />
         <activity
             android:name=".GoalsPopUpActivity"
             android:exported="true" />
-        <activity android:name=".GoalsActivity" />
+        <activity android:name=".GoalsActivity">
+
+        </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity" />
     </application>
