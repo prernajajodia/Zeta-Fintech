@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Zeta FinTech</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="financeteen_lit">FinanceTeen LIT</string>
+    <string name="Goals">Goals</string>
+    <string name="Earn_Coins">Earn Coins!</string>
+
+    <string-array name="array_name">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <string name="spinner_title">Target Frequency</string>
+
+</resources>
