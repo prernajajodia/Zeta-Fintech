@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_bg">
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/checkbox"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <TextView
+        android:id="@+id/task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Workout"
+        android:textColor="@color/dark_text"
+        android:textFontWeight="300"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/checkbox"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:src="@drawable/ic_more"
+        app:layout_constraintStart_toEndOf="@id/amount"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹ 50"
+        android:textColor="@color/dark_text"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toEndOf="@id/task"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time,"
+        android:layout_marginStart="8dp"
+
+        app:layout_constraintStart_toEndOf="@id/checkbox"
+        app:layout_constraintTop_toBottomOf="@id/task" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day/Date"
+        android:layout_marginStart="8dp"
+
+        app:layout_constraintStart_toEndOf="@id/time"
+        app:layout_constraintTop_toBottomOf="@id/task" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
