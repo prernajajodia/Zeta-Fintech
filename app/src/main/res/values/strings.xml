@@ -20,5 +20,12 @@
     </string-array>
 
     <string name="spinner_title">Target Frequency</string>
+    <string name="menu_item_edit">Edit</string>
+    <string name="menu_item_remove">Remove</string>
+    <string name="payments_txt">Payments</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
 </resources>
