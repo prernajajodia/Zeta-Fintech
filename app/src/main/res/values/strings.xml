@@ -20,5 +20,8 @@
     </string-array>
 
     <string name="spinner_title">Target Frequency</string>
+    <string name="menu_item_edit">Edit</string>
+    <string name="menu_item_remove">Remove</string>
+    <string name="payments_txt">Payments</string>
 
 </resources>

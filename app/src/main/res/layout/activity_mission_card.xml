@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@color/light_bg">
 
-
     <soup.neumorphism.NeumorphCardView
         android:id="@+id/checkbox"
         style="@style/Widget.Neumorph.CardView"
@@ -29,6 +28,7 @@
         tools:layout_editor_absoluteY="37dp" />
 
     <ImageView
+        android:id="@+id/menu_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -52,18 +52,16 @@
         android:id="@+id/time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Time,"
         android:layout_marginStart="8dp"
-
+        android:text="Time,"
         app:layout_constraintStart_toEndOf="@id/checkbox"
         app:layout_constraintTop_toBottomOf="@id/task" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Day/Date"
         android:layout_marginStart="8dp"
-
+        android:text="Day/Date"
         app:layout_constraintStart_toEndOf="@id/time"
         app:layout_constraintTop_toBottomOf="@id/task" />
 

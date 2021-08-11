@@ -7,9 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.zeta.zetafintech.R
 import com.zeta.zetafintech.models.MissionModel
 
-class MissionAdapter(val missionList: List<MissionModel>) : RecyclerView.Adapter<MissionAdapter.ViewHolder>() {
-
-    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+class MissionAdapter(private val missionList: List<MissionModel>) : RecyclerView.Adapter<MissionAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
@@ -19,11 +17,14 @@ class MissionAdapter(val missionList: List<MissionModel>) : RecyclerView.Adapter
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+
+        holder.itemView
+
     }
 
     override fun getItemCount(): Int {
         return missionList.size
     }
 
-
+    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 }

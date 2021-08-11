@@ -10,22 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ZetaFinTech">
         <activity
-            android:name=".MissionActivity"
-            android:exported="true">
+            android:name=".PaymentActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity
+            android:name=".MissionActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".MissionPopUpActivity"
             android:exported="true" />
         <activity
             android:name=".GoalsPopUpActivity"
             android:exported="true" />
-        <activity android:name=".GoalsActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".GoalsActivity">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity" />

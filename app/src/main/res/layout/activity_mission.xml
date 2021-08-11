@@ -7,191 +7,191 @@
     android:layout_height="fill_parent"
     android:fillViewport="true">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/light_bg"
-    tools:context=".MissionActivity">
-
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/top"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="wrap_content"
+        android:background="@color/light_bg"
+        tools:context=".MissionActivity">
 
-        <soup.neumorphism.NeumorphImageButton
-            android:id="@+id/back_botton"
-            style="@style/Widget.Neumorph.ImageButton"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/left_icon"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <soup.neumorphism.NeumorphImageButton
-            android:id="@+id/notif_button"
-            style="@style/Widget.Neumorph.ImageButton"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/ic_notification"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <soup.neumorphism.NeumorphImageButton
+                android:id="@+id/back_botton"
+                style="@style/Widget.Neumorph.ImageButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/left_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <soup.neumorphism.NeumorphImageButton
+                android:id="@+id/notif_button"
+                style="@style/Widget.Neumorph.ImageButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_notification"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/goals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="35dp"
+            android:text="Mission"
+            android:textColor="@color/dark_text"
+            android:textSize="39sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/top" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="6.5dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/dark_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/goals" />
+
+        <TextView
+            android:id="@+id/card_left_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Money made \n today"
+            android:textAlignment="center"
+            android:textColor="@color/dark_text"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@id/card_left"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="Misions \n Completed"
+            android:textAlignment="center"
+            android:textColor="@color/dark_text"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@id/card_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/card_left_title" />
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/card_left"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="20dp"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line"
+            app:neumorph_shapeType="pressed">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/no_background"
+                android:hint="₹ 101"
+                android:textAlignment="center"
+                android:textColor="@color/dark_text"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/card_right"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="20dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line"
+            app:neumorph_shapeType="pressed">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/no_background"
+                android:hint="₹ 101"
+                android:textAlignment="center"
+                android:textColor="@color/dark_text"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/mission_button"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:src="@drawable/ic_add"
+            android:text="Add Mission"
+            android:textAlignment="center"
+            android:textColor="@color/dark_text"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_left" />
+
+        <TextView
+            android:id="@+id/mission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="15dp"
+            android:text="Prerna's Mission"
+            android:textColor="@color/dark_text"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mission_button" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mission_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mission"
+            tools:listitem="@layout/activity_mission_card" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/goals"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:paddingStart="35dp"
-        android:text="Mission"
-        android:textColor="@color/dark_text"
-        android:textSize="39sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top" />
-
-    <View
-        android:id="@+id/line"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="6.5dp"
-        android:layout_marginEnd="20dp"
-        android:background="@color/dark_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/goals" />
-
-    <TextView
-        android:id="@+id/card_left_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:text="Money made \n today"
-        android:textAlignment="center"
-        android:textColor="@color/dark_text"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@id/card_left"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
-        android:text="Misions \n Completed"
-        android:textAlignment="center"
-        android:textColor="@color/dark_text"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@id/card_right"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/card_left_title" />
-
-    <soup.neumorphism.NeumorphCardView
-        android:id="@+id/card_left"
-        style="@style/Widget.Neumorph.CardView"
-        android:layout_width="180dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="20dp"
-        android:textAlignment="center"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/line"
-        app:neumorph_shapeType="pressed">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/no_background"
-            android:hint="₹ 101"
-            android:textAlignment="center"
-            android:textColor="@color/dark_text"
-            android:textCursorDrawable="@drawable/cursor"
-            android:textSize="36sp"
-            android:textStyle="bold" />
-
-    </soup.neumorphism.NeumorphCardView>
-
-    <soup.neumorphism.NeumorphCardView
-        android:id="@+id/card_right"
-        style="@style/Widget.Neumorph.CardView"
-        android:layout_width="180dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="20dp"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/line"
-        app:neumorph_shapeType="pressed">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/no_background"
-            android:hint="₹ 101"
-            android:textAlignment="center"
-            android:textColor="@color/dark_text"
-            android:textCursorDrawable="@drawable/cursor"
-            android:textSize="36sp"
-            android:textStyle="bold" />
-
-    </soup.neumorphism.NeumorphCardView>
-
-    <soup.neumorphism.NeumorphButton
-        android:id="@+id/mission_button"
-        style="@style/Widget.Neumorph.Button"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:orientation="horizontal"
-        android:src="@drawable/ic_add"
-        android:text="Add Mission"
-        android:textAlignment="center"
-        android:textColor="@color/dark_text"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/card_left" />
-
-    <TextView
-        android:id="@+id/mission"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:fontFamily="sans-serif-medium"
-        android:paddingStart="15dp"
-        android:text="Prerna's Mission"
-        android:textColor="@color/dark_text"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mission_button" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/mission_list"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:orientation="vertical"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mission"
-        tools:listitem="@layout/activity_mission_card" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
