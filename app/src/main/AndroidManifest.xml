@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ZetaFinTech">
         <activity
-            android:name=".PaymentActivity"
-            android:exported="true" >
+            android:name=".activities.DashboardActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,17 +19,18 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".PaymentActivity"
+            android:exported="true" />
+        <activity
             android:name=".MissionActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".MissionPopUpActivity"
             android:exported="true" />
         <activity
             android:name=".GoalsPopUpActivity"
             android:exported="true" />
-        <activity android:name=".GoalsActivity">
-
-        </activity>
+        <activity android:name=".GoalsActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity" />
     </application>
