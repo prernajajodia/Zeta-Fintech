@@ -27,5 +27,8 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="continue_with_where_you_left_off">Continue with where you left off</string>
+    <string name="level_1">Level 1</string>
+    <string name="share">Share</string>
 
 </resources>

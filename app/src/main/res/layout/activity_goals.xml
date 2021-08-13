@@ -54,7 +54,7 @@
             android:paddingStart="35dp"
             android:text="@string/Goals"
             android:textColor="@color/dark_text"
-            android:textSize="39sp"
+            android:textSize="32sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/top" />
 
@@ -97,7 +97,7 @@
                     android:layout_marginBottom="10dp"
                     android:text="Your Savings"
                     android:textColor="@color/dark_text"
-                    android:textSize="30sp" />
+                    android:textSize="28sp" />
 
 
                 <TextView
@@ -133,7 +133,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:fontFamily="sans-serif-medium"
-            android:paddingStart="35dp"
+            android:paddingStart="24dp"
             android:text="Prerna's Goals"
             android:textColor="@color/dark_text"
             android:textSize="28sp"

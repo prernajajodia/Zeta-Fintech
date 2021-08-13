@@ -3,334 +3,339 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:fillViewport="true">
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragments.MakePaymentFragment"
 
-    android:background="@color/light_bg"
-    >
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/top"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:background="@color/light_bg"
+        tools:context=".fragments.MakePaymentFragment">
 
-        <soup.neumorphism.NeumorphImageButton
-            android:id="@+id/back_botton"
-            style="@style/Widget.Neumorph.ImageButton"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/left_icon"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <soup.neumorphism.NeumorphImageButton
-            android:id="@+id/notif_button"
-            style="@style/Widget.Neumorph.ImageButton"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/ic_notification"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <soup.neumorphism.NeumorphImageButton
+                android:id="@+id/back_botton"
+                style="@style/Widget.Neumorph.ImageButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/left_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <soup.neumorphism.NeumorphImageButton
+                android:id="@+id/notif_button"
+                style="@style/Widget.Neumorph.ImageButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_notification"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/goals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Payments"
+            android:textColor="@color/dark_text"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/top" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="6.5dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/dark_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/goals" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/goals">
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/makepayment"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toStartOf="@id/receivepayment"
+                app:layout_constraintStart_toStartOf="parent"
+                app:neumorph_shapeType="pressed">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Make Payment"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_text"
+                    android:textFontWeight="300"
+                    android:textSize="15sp" />
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/receivepayment"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="@id/makepayment"
+                app:layout_constraintStart_toStartOf="parent"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Receive Payment"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_text"
+                    android:textFontWeight="300"
+                    android:textSize="15sp" />
+
+            </soup.neumorphism.NeumorphCardView>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Pay ₹ 3000"
+            android:textAlignment="center"
+            android:textColor="@color/dark_text"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/buttons" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/curve"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/amount">
+
+            <TextView
+                android:id="@+id/scanbutton"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="@color/dark_text"
+                android:gravity="center"
+                android:text="Scan QR code"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+
+            <TextView
+                android:id="@+id/othermethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Other payment methods"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/scanbutton" />
+
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/othermethod">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Enter mobile number"
+                    android:textColor="@color/dark_text"
+                    android:textFontWeight="300"
+                    android:textSize="15sp" />
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/no_background"
+                    android:hint="mobile number"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textCursorDrawable="@drawable/cursor" />
+
+                <View
+                    android:layout_width="250dp"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@color/dark_text"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="50dp"
+                    android:text="SEND"
+                    android:textFontWeight="300" />
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/account"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mobile">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Enter account number"
+                    android:textColor="@color/dark_text"
+                    android:textFontWeight="300"
+                    android:textSize="15sp" />
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/no_background"
+                    android:hint="acc. number"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textCursorDrawable="@drawable/cursor" />
+
+                <View
+                    android:layout_width="250dp"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@color/dark_text"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="50dp"
+                    android:text="SEND"
+                    android:textFontWeight="300" />
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/appid"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/account">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Enter app ID"
+                    android:textColor="@color/dark_text"
+                    android:textFontWeight="300"
+                    android:textSize="15sp" />
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/no_background"
+                    android:hint="app ID"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textCursorDrawable="@drawable/cursor" />
+
+                <View
+                    android:layout_width="250dp"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@color/dark_text"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="50dp"
+                    android:text="SEND"
+                    android:textFontWeight="300" />
+            </soup.neumorphism.NeumorphCardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-    <TextView
-        android:id="@+id/goals"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:text="Payments"
-        android:gravity="center"
-        android:textColor="@color/dark_text"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top" />
-
-    <View
-        android:id="@+id/line"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="6.5dp"
-        android:layout_marginEnd="20dp"
-        android:background="@color/dark_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/goals" />
-
-
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/buttons"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@id/goals"
-        >
-
-        <soup.neumorphism.NeumorphCardView
-            android:id="@+id/makepayment"
-            android:layout_width="200dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            app:layout_constraintEnd_toStartOf="@id/receivepayment"
-            app:layout_constraintStart_toStartOf="parent"
-            app:neumorph_shapeType="pressed"
-            >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Make Payment"
-                android:textAlignment="center"
-                android:gravity="center"
-                android:textFontWeight="300"
-                android:textColor="@color/dark_text"
-                android:textSize="15sp"/>
-
-        </soup.neumorphism.NeumorphCardView>
-        <soup.neumorphism.NeumorphCardView
-            android:id="@+id/receivepayment"
-            android:layout_width="200dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            app:layout_constraintEnd_toEndOf="@id/makepayment"
-            app:layout_constraintStart_toStartOf="parent"
-
-            >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Receive Payment"
-                android:textAlignment="center"
-                android:gravity="center"
-                android:textFontWeight="300"
-                android:textColor="@color/dark_text"
-                android:textSize="15sp"/>
-
-        </soup.neumorphism.NeumorphCardView>
-
-
-
-    </androidx.appcompat.widget.LinearLayoutCompat>
-
-    <TextView
-        android:id="@+id/amount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="Pay ₹ 3000"
-        android:textAlignment="center"
-        android:textSize="22sp"
-        android:textColor="@color/dark_text"
-        android:layout_marginTop="20dp"
-
-        app:layout_constraintTop_toBottomOf="@id/buttons"/>
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/amount"
-        android:layout_marginTop="30dp"
-        android:padding="20dp"
-        android:background="@drawable/curve"
-        >
-    <TextView
-        android:id="@+id/scanbutton"
-        android:layout_width="match_parent"
-        android:layout_margin="15dp"
-        android:layout_height="47dp"
-        android:text="Scan QR code"
-        android:gravity="center"
-        android:layout_weight="1"
-        android:background="@color/dark_text"
-        android:textColor="@color/white"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        />
-
-    <TextView
-        android:id="@+id/othermethod"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Other payment methods"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/scanbutton"
-        android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="15dp"/>
-
-
-        <soup.neumorphism.NeumorphCardView
-            android:id="@+id/mobile"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_gravity="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/othermethod"
-            >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Enter mobile number"
-
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:textFontWeight="300"
-                android:textColor="@color/dark_text"
-                android:textSize="15sp"/>
-            <EditText
-
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/no_background"
-                android:hint="mobile number"
-                android:inputType="textEmailAddress"
-                android:paddingStart="10dp"
-                android:paddingEnd="10dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="7dp"
-                android:textCursorDrawable="@drawable/cursor" />
-
-            <View
-                android:layout_width="250dp"
-                android:layout_height="3dp"
-                android:background="@color/dark_text"
-                android:layout_marginTop="75dp"
-                android:layout_marginLeft="20dp"
-
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="SEND"
-                android:layout_marginLeft="280dp"
-                android:textFontWeight="300"
-                android:layout_marginTop="50dp"
-                />
-
-        </soup.neumorphism.NeumorphCardView>
-
-        <soup.neumorphism.NeumorphCardView
-            android:id="@+id/account"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_gravity="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/mobile"
-            >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Enter account number"
-
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:textFontWeight="300"
-                android:textColor="@color/dark_text"
-                android:textSize="15sp"/>
-            <EditText
-
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/no_background"
-                android:hint="acc. number"
-                android:inputType="textEmailAddress"
-                android:paddingStart="10dp"
-                android:paddingEnd="10dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="7dp"
-                android:textCursorDrawable="@drawable/cursor" />
-
-            <View
-                android:layout_width="250dp"
-                android:layout_height="3dp"
-                android:background="@color/dark_text"
-                android:layout_marginTop="75dp"
-                android:layout_marginLeft="20dp"
-
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="SEND"
-                android:layout_marginLeft="280dp"
-                android:textFontWeight="300"
-                android:layout_marginTop="50dp"
-                />
-
-        </soup.neumorphism.NeumorphCardView>
-        <soup.neumorphism.NeumorphCardView
-            android:id="@+id/appid"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_gravity="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/account"
-            >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Enter app ID"
-
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:textFontWeight="300"
-                android:textColor="@color/dark_text"
-                android:textSize="15sp"/>
-            <EditText
-
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/no_background"
-                android:hint="app ID"
-                android:inputType="textEmailAddress"
-                android:paddingStart="10dp"
-                android:paddingEnd="10dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="7dp"
-                android:textCursorDrawable="@drawable/cursor" />
-
-            <View
-                android:layout_width="250dp"
-                android:layout_height="3dp"
-                android:background="@color/dark_text"
-                android:layout_marginTop="75dp"
-                android:layout_marginLeft="20dp"
-
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="SEND"
-                android:layout_marginLeft="280dp"
-                android:textFontWeight="300"
-                android:layout_marginTop="50dp"
-                />
-        </soup.neumorphism.NeumorphCardView>
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

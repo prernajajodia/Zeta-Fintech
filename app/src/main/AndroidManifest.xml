@@ -10,23 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ZetaFinTech">
         <activity
+            android:name=".TransactionHistoryFragment"
+            android:exported="true" />
+        <activity
+            android:name=".AccountFragment"
+            android:exported="true" />
+        <activity
             android:name=".SignUpActivity"
             android:exported="true" />
         <activity
-            android:name=".TransactionClickActivity"
+            android:name=".TransactionClickFragment"
             android:exported="true" />
         <activity
-            android:name=".ProfileActivity"
+            android:name=".ProfileFragment"
             android:exported="true" />
         <activity
             android:name=".activities.DashboardActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".fragments.MissionFragment"
             android:exported="true" />
@@ -37,7 +37,13 @@
             android:name=".GoalsPopUpActivity"
             android:exported="true" />
         <activity android:name=".SplashScreenActivity" />
-        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
