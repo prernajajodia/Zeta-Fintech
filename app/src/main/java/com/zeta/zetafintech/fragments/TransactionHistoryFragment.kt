@@ -1,15 +1,16 @@
-package com.zeta.zetafintech
+package com.zeta.zetafintech.fragments
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.zeta.zetafintech.databinding.FragmentAccountBinding
+import com.zeta.zetafintech.R
+import com.zeta.zetafintech.Utils
+import com.zeta.zetafintech.databinding.FragmentTransactionHistoryBinding
 
-class AccountFragment : Fragment() {
-    private var _binding: FragmentAccountBinding? = null
+class TransactionHistoryFragment : Fragment() {
+    private var _binding: FragmentTransactionHistoryBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -18,12 +19,12 @@ class AccountFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        _binding = FragmentAccountBinding.inflate(inflater, container, false)
+        _binding = FragmentTransactionHistoryBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         Utils.blackIconsStatusBar(activity, R.color.light_bg)
 
         return root
-    }
 
+    }
 }

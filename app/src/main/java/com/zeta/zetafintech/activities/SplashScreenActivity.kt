@@ -1,11 +1,12 @@
-package com.zeta.zetafintech
+package com.zeta.zetafintech.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
-import com.zeta.zetafintech.activities.LoginActivity
+import com.zeta.zetafintech.R
+import com.zeta.zetafintech.Utils
 import com.zeta.zetafintech.databinding.ActivitySplashScreenBinding
 
 class SplashScreenActivity : AppCompatActivity() {

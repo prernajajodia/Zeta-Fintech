@@ -11,7 +11,7 @@
         android:theme="@style/Theme.ZetaFinTech">
 
         <activity
-            android:name=".SignUpActivity"
+            android:name=".activities.SignUpActivity"
             android:exported="true" />
         <activity
             android:name=".activities.DashboardActivity"
@@ -22,7 +22,7 @@
         <activity
             android:name=".GoalsPopUpActivity"
             android:exported="true" />
-        <activity android:name=".SplashScreenActivity">
+        <activity android:name=".activities.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

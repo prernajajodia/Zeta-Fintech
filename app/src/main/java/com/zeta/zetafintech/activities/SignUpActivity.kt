@@ -1,7 +1,9 @@
-package com.zeta.zetafintech
+package com.zeta.zetafintech.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.zeta.zetafintech.R
+import com.zeta.zetafintech.Utils
 import com.zeta.zetafintech.databinding.ActivitySignUpBinding
 
 class SignUpActivity : AppCompatActivity() {
