@@ -1,28 +1,35 @@
 package com.zeta.zetafintech.fragments
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.zeta.zetafintech.R
 import com.zeta.zetafintech.Utils
 import com.zeta.zetafintech.adapters.GoalsAdapter
-import com.zeta.zetafintech.databinding.ActivityGoalsBinding
+import com.zeta.zetafintech.databinding.FragmentGoalsBinding
 import com.zeta.zetafintech.models.GoalsModel
 
-class GoalsFragment : AppCompatActivity() {
+class GoalsFragment : Fragment() {
 
     private val mutableGoalsModel: MutableList<GoalsModel> = mutableListOf()
+    private var _binding: FragmentGoalsBinding? = null
+    private val binding get() = _binding!!
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentGoalsBinding.inflate(inflater, container, false)
+        val root: View = binding.root
 
-        val binding: ActivityGoalsBinding = ActivityGoalsBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
-
-        Utils.blackIconsStatusBar(this, R.color.light_bg)
-
+        Utils.blackIconsStatusBar(activity, R.color.light_bg)
         initGoalsModels()
         binding.goalsList.adapter = GoalsAdapter(mutableGoalsModel)
+
+        return root
     }
 
     private fun initGoalsModels() {

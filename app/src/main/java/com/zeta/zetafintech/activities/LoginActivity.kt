@@ -1,7 +1,8 @@
 package com.zeta.zetafintech.activities
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.zeta.zetafintech.R
 import com.zeta.zetafintech.Utils
 import com.zeta.zetafintech.databinding.ActivityLoginBinding
@@ -15,6 +16,11 @@ class LoginActivity : AppCompatActivity() {
         setContentView(view)
 
         Utils.blackIconsStatusBar(this, R.color.light_bg)
+
+        binding.signInButton.setOnClickListener {
+            startActivity(Intent(this, DashboardActivity::class.java))
+            finish()
+        }
 
     }
 }

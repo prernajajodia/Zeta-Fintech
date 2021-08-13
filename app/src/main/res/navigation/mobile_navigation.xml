@@ -2,4 +2,59 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation"/>
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+    <fragment
+        android:id="@+id/navigation_earn"
+        android:name="com.zeta.zetafintech.fragments.EarnFragment"
+        android:label="EarnFragment" />
+    <fragment
+        android:id="@+id/makePaymentFragment"
+        android:name="com.zeta.zetafintech.fragments.MakePaymentFragment"
+        android:label="MakePaymentFragment" />
+    <fragment
+        android:id="@+id/navigation_payments"
+        android:name="com.zeta.zetafintech.fragments.PaymentFragment"
+        android:label="PaymentFragment" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.zeta.zetafintech.fragments.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/receivePaymentFragment"
+        android:name="com.zeta.zetafintech.fragments.ReceivePaymentFragment"
+        android:label="ReceivePaymentFragment" />
+    <fragment
+        android:id="@+id/redeemFragment"
+        android:name="com.zeta.zetafintech.fragments.RedeemFragment"
+        android:label="RedeemFragment" />
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.zeta.zetafintech.fragments.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/missionFragment"
+        android:name="com.zeta.zetafintech.fragments.MissionFragment"
+        android:label="fragment_mission"
+        tools:layout="@layout/fragment_mission" />
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.zeta.zetafintech.fragments.ProductFragment"
+        android:label="fragment_product"
+        tools:layout="@layout/fragment_product" />
+    <fragment
+        android:id="@+id/transactionClickFragment"
+        android:name="com.zeta.zetafintech.fragments.TransactionClickFragment"
+        android:label="fragment_transaction_click"
+        tools:layout="@layout/fragment_transaction_click" />
+    <fragment
+        android:id="@+id/transactionHistoryFragment"
+        android:name="com.zeta.zetafintech.fragments.TransactionHistoryFragment"
+        android:label="fragment_transaction_history"
+        tools:layout="@layout/fragment_transaction_history" />
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.zeta.zetafintech.fragments.HomeFragment"
+        android:label="HomeFragment" />
+</navigation>

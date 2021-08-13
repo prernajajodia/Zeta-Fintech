@@ -1,8 +1,7 @@
 package com.zeta.zetafintech
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.zeta.zetafintech.databinding.ActivityGoalsBinding
+import androidx.appcompat.app.AppCompatActivity
 import com.zeta.zetafintech.databinding.ActivityGoalsPopUpBinding
 
 class GoalsPopUpActivity : AppCompatActivity() {
@@ -24,8 +23,6 @@ class GoalsPopUpActivity : AppCompatActivity() {
         binding.enterGoalAmntFreq.goalsEditText.hint = "amount at frequency"
         binding.enterGoalAmnt.goalsEditText.hint = "amount"
         binding.enterGoal.goalsEditText.hint = "enter your goal"
-
-
 
 
     }
