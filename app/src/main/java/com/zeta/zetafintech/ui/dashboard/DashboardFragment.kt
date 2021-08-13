@@ -13,7 +13,7 @@ import com.zeta.zetafintech.databinding.FragmentDashboardBinding
 
 class DashboardFragment : Fragment() {
 
-    private lateinit var dashboardViewModel: DashboardViewModel
+    private lateinit var dashboardViewModel: DashboardViewModel // Omit
     private var _binding: FragmentDashboardBinding? = null
 
     // This property is only valid between onCreateView and
@@ -26,15 +26,15 @@ class DashboardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         dashboardViewModel =
-            ViewModelProvider(this).get(DashboardViewModel::class.java)
+            ViewModelProvider(this).get(DashboardViewModel::class.java) // Omit
 
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDashboard
+        val textView: TextView = binding.textDashboard // omit
         dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
-        })
+        }) // omit
         return root
     }
 

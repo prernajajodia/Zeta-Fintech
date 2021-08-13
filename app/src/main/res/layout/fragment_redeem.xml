@@ -4,13 +4,14 @@
     android:layout_height="fill_parent"
     android:fillViewport="true">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/light_bg"
-        tools:context=".RedeemActivity">
+        tools:context=".fragments.RedeemFragment">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/top"
@@ -47,11 +48,12 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
-            android:id="@+id/goals"
+            android:id="@+id/heading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
-            android:gravity="center"
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
             android:text="Earn and Redeem"
             android:textColor="@color/dark_text"
             android:textSize="25sp"
@@ -68,38 +70,49 @@
             android:background="@color/dark_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/goals" />
+            app:layout_constraintTop_toBottomOf="@id/heading" />
 
-        <androidx.appcompat.widget.LinearLayoutCompat
+        <soup.neumorphism.NeumorphCardView
             android:id="@+id/buttons"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="170dp"
+            android:layout_height="90dp"
+            app:neumorph_shapeType="pressed"
             android:layout_marginTop="50dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="20dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/goals">
+            app:layout_constraintTop_toBottomOf="@id/line">
 
             <TextView
-                android:id="@+id/button1"
-                android:layout_width="wrap_content"
-                android:layout_height="47dp"
-                android:layout_weight="1"
-                android:background="@color/dark_text"
-                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="Earn Coins"
-                android:textColor="@color/white" />
+                android:textAlignment="center"
+                android:textColor="@color/dark_text"
+                android:textSize="18dp" />
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/button"
+            android:layout_width="170dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            app:layout_constraintStart_toEndOf="@id/buttons"
+            app:layout_constraintTop_toBottomOf="@id/line">
 
             <TextView
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:background="@drawable/back"
-                android:gravity="center"
-                android:text="Redeem Coins" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Recieve Coins"
+                android:textAlignment="center"
+                android:textColor="@color/dark_text"
+                android:textSize="18dp" />
 
+        </soup.neumorphism.NeumorphCardView>
 
-        </androidx.appcompat.widget.LinearLayoutCompat>
 
         <TextView
             android:id="@+id/thankyoutext"
@@ -119,18 +132,12 @@
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/card"
             android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_height="300dp"
             android:layout_gravity="center"
             android:padding="50dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/thankyoutext"
-
-            >
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            app:layout_constraintTop_toBottomOf="@+id/thankyoutext">
 
                 <TextView
                     android:id="@+id/title"
@@ -144,10 +151,7 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/dark_text"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-
-                    />
-
+                    app:layout_constraintStart_toStartOf="parent" />
 
                 <TextView
                     android:id="@+id/description"
@@ -156,7 +160,7 @@
                     android:layout_marginStart="25dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="16dp"
-                    android:text="₹ 12555 "
+                    android:text="12555 "
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textColor="@color/dark_text"
@@ -165,7 +169,6 @@
                     app:layout_constraintTop_toBottomOf="@id/title" />
 
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </soup.neumorphism.NeumorphCardView>
 

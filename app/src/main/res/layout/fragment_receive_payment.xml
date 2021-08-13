@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/light_bg"
-        tools:context=".ReceivePaymentActivity">
+        tools:context=".fragments.ReceivePaymentFragment">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout

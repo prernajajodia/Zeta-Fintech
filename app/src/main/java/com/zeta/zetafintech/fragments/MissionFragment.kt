@@ -1,12 +1,14 @@
-package com.zeta.zetafintech
+package com.zeta.zetafintech.fragments
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.zeta.zetafintech.R
+import com.zeta.zetafintech.Utils
 import com.zeta.zetafintech.adapters.MissionAdapter
 import com.zeta.zetafintech.databinding.ActivityMissionBinding
 import com.zeta.zetafintech.models.MissionModel
 
-class MissionActivity : AppCompatActivity() {
+class MissionFragment : AppCompatActivity() {
 
     private val missionList: MutableList<MissionModel> = mutableListOf()
 

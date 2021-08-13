@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/light_bg"
+    tools:context=".SplashScreenActivity">
 
     <ImageView
         android:id="@+id/img_logo"
@@ -20,7 +21,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-10dp"
         android:fontFamily="sans-serif-light"
-        android:text="My Piggy Bank"
+        android:text="PayTeen"
         android:textColor="@color/dark_text"
         android:textSize="34dp" />
 

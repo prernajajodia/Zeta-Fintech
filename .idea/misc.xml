@@ -10,12 +10,25 @@
         <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/activity_goals.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/activity_goals_card.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/activity_goals_pop_up.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/activity_mission.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/activity_mission_card.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/activity_mission_pop_up.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/activity_payment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/activity_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/activity_sign_up.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/activity_transaction_click.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/fragment_earn.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/fragment_make_payment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/fragment_mission.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/fragment_notifications.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/fragment_payment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/fragment_product.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/fragment_receive_payment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/fragment_redeem.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/layout/user_entry.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Adity/AndroidStudioProjects/ZetaFinTech/app/src/main/res/menu/mission_menu.xml" value="0.25416666666666665" />
       </map>

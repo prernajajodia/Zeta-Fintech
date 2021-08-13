@@ -1,12 +1,14 @@
-package com.zeta.zetafintech
+package com.zeta.zetafintech.fragments
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.zeta.zetafintech.R
+import com.zeta.zetafintech.Utils
 import com.zeta.zetafintech.adapters.GoalsAdapter
 import com.zeta.zetafintech.databinding.ActivityGoalsBinding
 import com.zeta.zetafintech.models.GoalsModel
 
-class GoalsActivity : AppCompatActivity() {
+class GoalsFragment : AppCompatActivity() {
 
     private val mutableGoalsModel: MutableList<GoalsModel> = mutableListOf()
 

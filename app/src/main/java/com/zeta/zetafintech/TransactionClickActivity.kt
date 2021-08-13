@@ -2,14 +2,15 @@ package com.zeta.zetafintech
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.zeta.zetafintech.databinding.ActivityEarnBinding
-import com.zeta.zetafintech.databinding.ActivityMissionBinding
+import com.zeta.zetafintech.databinding.ActivitySplashScreenBinding
+import com.zeta.zetafintech.databinding.ActivityTransactionClickBinding
 
-class EarnActivity : AppCompatActivity() {
+class TransactionClickActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val binding: ActivityEarnBinding = ActivityEarnBinding.inflate(layoutInflater)
+        val binding: ActivityTransactionClickBinding =
+            ActivityTransactionClickBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 

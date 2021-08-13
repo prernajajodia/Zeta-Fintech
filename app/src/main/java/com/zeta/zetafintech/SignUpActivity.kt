@@ -2,14 +2,15 @@ package com.zeta.zetafintech
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.zeta.zetafintech.databinding.ActivityMakePaymentBinding
-import com.zeta.zetafintech.databinding.ActivityProductBinding
+import com.zeta.zetafintech.databinding.ActivitySignUpBinding
+import com.zeta.zetafintech.databinding.ActivityTransactionClickBinding
 
-class MakePaymentActivity : AppCompatActivity() {
+class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val binding: ActivityMakePaymentBinding = ActivityMakePaymentBinding.inflate(layoutInflater)
+        val binding: ActivitySignUpBinding =
+            ActivitySignUpBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
