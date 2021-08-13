@@ -25,5 +25,10 @@ git clone https://github.com/your_username_/Zeta-Fintech.git
 ```
 3. Open the cloned repo in Android Studio 
 
+# Sneak Peak into our project : 
+https://user-images.githubusercontent.com/72685035/129397409-a6cfc268-3944-408d-a709-d9474d887f15.mp4
+
+
+
 
 
