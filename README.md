@@ -1,10 +1,8 @@
 # ![GenMoney (1)](https://user-images.githubusercontent.com/72685035/129370875-7ac21c9f-a8b0-4bf6-b32d-07c17d2e3552.jpg)
 
-Even in modern times, the fundamental pillar of financial literacy remains evergreen, just with a touch of technology to it. Lessons for saving and finance management 
-remain crucial but require far more interaction and frequent touch than the older days. 
+The core cornerstone of financial literacy remains evergreen in modern times, but with a technological twist. Savings and financial management lessons are still important, but they require significantly more contact and regular touch than in the past.
 
-With this traditional ideology and the power of technology, we came up with the idea of ‘GenMoney’, a mobile application for teenagers to manage their finances, 
-set goals for savings, and learn the fundamentals of how money works and all of this, at the tap of a finger. 
+Based on this traditional mindset and ofcourse with the power of technology, we came up with the idea of ‘GenMoney', a smartphone application for kids to manage their finances, set savings goals, and understand the foundations of how money works, all just at the touch of a finger
 
 **GenMoney** is a mobile application designed by keeping in mind the gen-Z and the transformations in the aspects of money management along with the traditional 
 evergreen methodologies. We at GenMoney, aim to provide teenagers a real experience of how is it like to have a bank account with features like **Savings Account**, 
@@ -13,7 +11,7 @@ We believe that teenage is the time when an individual gets a taste of the reali
 
 *The major objective of the application is to help teenagers become financially literate and soon become financially independent*. 
 
-Zeta Hacks acts as the perfect opportunity to bring this dream to reality and take our first step to reach the milestone of 10million financially educated Teenagers.
+Zeta Hacks provides the ideal opportunity to make this aspiration a reality and take the first step toward the goal of educating 10 million financially literate teenagers.
 
 # Installation 
 
