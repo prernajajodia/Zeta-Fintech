@@ -4,69 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.ProductFragment"
     android:background="@color/dark_text"
-    >
+    tools:context=".fragments.ProductFragment">
+
     <View
         android:layout_width="100dp"
         android:layout_height="6dp"
         android:layout_marginTop="70dp"
+        android:background="#c0c0c0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="#c0c0c0"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/curve"
         android:layout_marginTop="100dp"
-        >
+        android:background="@drawable/curve">
 
         <ImageView
             android:id="@+id/image"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:layout_marginTop="100dp"
             android:src="@drawable/gradation"
             app:layout_constraintDimensionRatio="H,3:2"
-            android:layout_marginTop="100dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
             android:fontFamily="sans-serif-medium"
             android:text="Super Cool Bicycle"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="15dp"
             android:textColor="@color/dark_text"
             android:textSize="25sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/image" />
+
         <TextView
             android:id="@+id/price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="35dp"
             android:fontFamily="sans-serif-medium"
             android:text="6000 coins"
-            android:layout_marginTop="35dp"
-            android:layout_marginLeft="300dp"
             android:textColor="@color/purple_500"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/image" />
+
         <TextView
             android:id="@+id/desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
             android:fontFamily="sans-serif-medium"
             android:text="Some really cool stuff about the bike which will make you want one."
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="15dp"
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -77,17 +77,16 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="32dp"
             android:layout_marginLeft="100dp"
+            android:layout_marginTop="32dp"
             android:text="Redeem 6000 coins"
             android:textColor="@color/dark_text"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/desc"/>
+            app:layout_constraintTop_toBottomOf="@+id/desc" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.zeta.zetafintech.R
 import com.zeta.zetafintech.Utils
 import com.zeta.zetafintech.databinding.FragmentAccountBinding
@@ -23,6 +24,10 @@ class AccountFragment : Fragment() {
         val root: View = binding.root
 
         Utils.blackIconsStatusBar(activity, R.color.light_bg)
+
+        binding.transactionHistory.setOnClickListener {
+            findNavController().navigate(AccountFragmentDirections.actionNavigationAccountToTransactionHistoryFragment())
+        }
 
         return root
     }

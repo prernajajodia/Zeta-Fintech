@@ -6,13 +6,11 @@
     android:layout_height="fill_parent"
     android:fillViewport="true">
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/light_bg"
         tools:context=".fragments.PaymentFragment">
-
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/top"

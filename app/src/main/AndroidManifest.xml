@@ -17,10 +17,10 @@
             android:name=".activities.DashboardActivity"
             android:exported="true" />
         <activity
-            android:name=".MissionPopUpActivity"
+            android:name=".fragments.MissionPopUpFragment"
             android:exported="true" />
         <activity
-            android:name=".GoalsPopUpActivity"
+            android:name=".fragments.GoalsPopUpFragment"
             android:exported="true" />
         <activity android:name=".activities.SplashScreenActivity">
             <intent-filter>

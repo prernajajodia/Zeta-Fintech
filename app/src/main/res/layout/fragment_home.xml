@@ -49,17 +49,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/welcome" />
 
-            <soup.neumorphism.NeumorphImageButton
-                android:id="@+id/avatar"
-                style="@style/Widget.Neumorph.ImageButton"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginRight="70dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/ic_notification"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/notif_button"
-                app:layout_constraintTop_toTopOf="parent" />
 
             <soup.neumorphism.NeumorphImageButton
                 android:id="@+id/notif_button"
@@ -86,28 +75,29 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/top" />
 
-        <soup.neumorphism.NeumorphImageButton
-            android:id="@+id/rupee"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="30dp"
-            android:scaleType="centerInside"
+        <TextView
+            android:id="@+id/bal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="57dp"
+            android:text="Currrent Balance : "
+            android:textColor="@color/dark_text"
+            android:textSize="21sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/line"
-            app:neumorph_shapeType="pressed" />
+            app:layout_constraintTop_toBottomOf="@+id/line" />
 
         <TextView
             android:id="@+id/money"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="55dp"
+            android:layout_marginTop="50dp"
             android:fontFamily="sans-serif-medium"
-            android:text="₹ 1111.05"
-            android:textColor="@color/black"
+            android:text=" ₹ 1111.05"
+            android:textColor="@color/dark_text"
             android:textFontWeight="500"
             android:textSize="28sp"
-            app:layout_constraintStart_toEndOf="@id/rupee"
+            app:layout_constraintStart_toEndOf="@id/bal"
             app:layout_constraintTop_toBottomOf="@id/line" />
 
         <TextView
@@ -115,10 +105,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="45dp"
             android:fontFamily="sans-serif-medium"
             android:text="@string/continue_with_where_you_left_off"
-            android:textFontWeight="200"
+            android:textFontWeight="400"
             android:textSize="17sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/money" />
@@ -203,7 +193,8 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:neumorph_shapeType="pressed" />
 
             <TextView
                 android:id="@+id/task"
@@ -333,7 +324,6 @@
             android:layout_gravity="center"
             android:layout_marginStart="15dp"
             android:layout_marginBottom="30dp"
-            android:paddingLeft="15dp"
             android:text="@string/share"
             android:textColor="@color/dark_text"
             android:textSize="16sp"
@@ -361,7 +351,7 @@
             style="@style/Widget.Neumorph.CardView"
             android:layout_width="330dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="80dp"
             android:padding="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -376,7 +366,8 @@
                 android:layout_marginBottom="40dp"
                 android:padding="10dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:neumorph_shapeType="pressed" />
 
             <TextView
                 android:id="@+id/kyctext"

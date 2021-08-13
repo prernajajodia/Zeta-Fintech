@@ -7,7 +7,11 @@
     <fragment
         android:id="@+id/navigation_earn"
         android:name="com.zeta.zetafintech.fragments.EarnFragment"
-        android:label="EarnFragment" />
+        android:label="EarnFragment" >
+        <action
+            android:id="@+id/action_navigation_earn_to_redeemFragment"
+            app:destination="@id/redeemFragment" />
+    </fragment>
     <fragment
         android:id="@+id/makePaymentFragment"
         android:name="com.zeta.zetafintech.fragments.MakePaymentFragment"
@@ -15,7 +19,14 @@
     <fragment
         android:id="@+id/navigation_payments"
         android:name="com.zeta.zetafintech.fragments.PaymentFragment"
-        android:label="PaymentFragment" />
+        android:label="PaymentFragment">
+        <action
+            android:id="@+id/action_navigation_payments_to_makePaymentFragment"
+            app:destination="@id/makePaymentFragment" />
+        <action
+            android:id="@+id/action_navigation_payments_to_receivePaymentFragment"
+            app:destination="@id/receivePaymentFragment" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.zeta.zetafintech.fragments.ProfileFragment"
@@ -27,17 +38,32 @@
     <fragment
         android:id="@+id/redeemFragment"
         android:name="com.zeta.zetafintech.fragments.RedeemFragment"
-        android:label="RedeemFragment" />
+        android:label="RedeemFragment">
+        <action
+            android:id="@+id/action_redeemFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_account"
         android:name="com.zeta.zetafintech.fragments.AccountFragment"
         android:label="fragment_account"
-        tools:layout="@layout/fragment_account" />
+        tools:layout="@layout/fragment_account">
+        <action
+            android:id="@+id/action_navigation_account_to_transactionHistoryFragment"
+            app:destination="@id/transactionHistoryFragment" />
+        <action
+            android:id="@+id/action_navigation_account_to_transactionHistoryFragment2"
+            app:destination="@id/transactionHistoryFragment" />
+    </fragment>
     <fragment
         android:id="@+id/missionFragment"
         android:name="com.zeta.zetafintech.fragments.MissionFragment"
         android:label="fragment_mission"
-        tools:layout="@layout/fragment_mission" />
+        tools:layout="@layout/fragment_mission" >
+        <action
+            android:id="@+id/action_missionFragment_to_missionPopUpFragment"
+            app:destination="@id/missionPopUpFragment" />
+    </fragment>
     <fragment
         android:id="@+id/productFragment"
         android:name="com.zeta.zetafintech.fragments.ProductFragment"
@@ -52,9 +78,50 @@
         android:id="@+id/transactionHistoryFragment"
         android:name="com.zeta.zetafintech.fragments.TransactionHistoryFragment"
         android:label="fragment_transaction_history"
-        tools:layout="@layout/fragment_transaction_history" />
+        tools:layout="@layout/fragment_transaction_history">
+        <action
+            android:id="@+id/action_transactionHistoryFragment_to_transactionClickFragment"
+            app:destination="@id/transactionClickFragment" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.zeta.zetafintech.fragments.HomeFragment"
-        android:label="HomeFragment" />
+        android:label="HomeFragment">
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_account"
+            app:destination="@id/navigation_account" />
+        <action
+            android:id="@+id/action_navigation_home_to_missionFragment"
+            app:destination="@id/missionFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_earn"
+            app:destination="@id/navigation_earn" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_payments"
+            app:destination="@id/navigation_payments" />
+        <action
+            android:id="@+id/action_navigation_home_to_goalsFragment"
+            app:destination="@id/goalsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalsFragment"
+        android:name="com.zeta.zetafintech.fragments.GoalsFragment"
+        android:label="GoalsFragment" >
+        <action
+            android:id="@+id/action_goalsFragment_to_goalsPopUpFragment"
+            app:destination="@id/goalsPopUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalsPopUpFragment"
+        android:name="com.zeta.zetafintech.fragments.GoalsPopUpFragment"
+        android:label="fragment_goals_pop_up"
+        tools:layout="@layout/fragment_goals_pop_up" />
+    <fragment
+        android:id="@+id/missionPopUpFragment"
+        android:name="com.zeta.zetafintech.fragments.MissionPopUpFragment"
+        android:label="fragment_mission_pop_up"
+        tools:layout="@layout/fragment_mission_pop_up" />
 </navigation>
