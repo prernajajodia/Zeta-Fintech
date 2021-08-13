@@ -1,4 +1,4 @@
-# Zeta-Fintech
+# ![GenMoney (1)](https://user-images.githubusercontent.com/72685035/129370875-7ac21c9f-a8b0-4bf6-b32d-07c17d2e3552.jpg)
 
 Even in modern times, the fundamental pillar of financial literacy remains evergreen, just with a touch of technology to it. Lessons for saving and finance management 
 remain crucial but require far more interaction and frequent touch than the older days. 
