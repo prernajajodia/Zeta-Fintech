@@ -1,7 +1,11 @@
 package com.zeta.zetafintech
 
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
+import com.zeta.zetafintech.activities.LoginActivity
 import com.zeta.zetafintech.databinding.ActivitySplashScreenBinding
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -14,6 +18,11 @@ class SplashScreenActivity : AppCompatActivity() {
         setContentView(view)
 
         Utils.blackIconsStatusBar(this, R.color.light_bg)
+
+        Handler(Looper.getMainLooper()).postDelayed({
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish()
+        }, 1500)
     }
 }
 

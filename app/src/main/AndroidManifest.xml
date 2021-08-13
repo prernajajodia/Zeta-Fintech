@@ -9,26 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ZetaFinTech">
-        <activity
-            android:name=".TransactionHistoryFragment"
-            android:exported="true" />
-        <activity
-            android:name=".AccountFragment"
-            android:exported="true" />
+
         <activity
             android:name=".SignUpActivity"
             android:exported="true" />
         <activity
-            android:name=".TransactionClickFragment"
-            android:exported="true" />
-        <activity
-            android:name=".ProfileFragment"
-            android:exported="true" />
-        <activity
             android:name=".activities.DashboardActivity"
-            android:exported="true" />
-        <activity
-            android:name=".fragments.MissionFragment"
             android:exported="true" />
         <activity
             android:name=".MissionPopUpActivity"
@@ -36,14 +22,14 @@
         <activity
             android:name=".GoalsPopUpActivity"
             android:exported="true" />
-        <activity android:name=".SplashScreenActivity" />
-        <activity android:name=".activities.LoginActivity">
+        <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activities.LoginActivity" />
     </application>
 
 </manifest>

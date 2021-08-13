@@ -108,7 +108,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.zeta.zetafintech.ProfileFragment"
+        android:name="com.zeta.zetafintech.fragments.ProfileFragment"
         android:label="ProfileFragment" >
         <action
             android:id="@+id/action_profileFragment_to_homeFragment"
