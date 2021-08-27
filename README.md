@@ -25,6 +25,7 @@ git clone https://github.com/your_username_/Zeta-Fintech.git
 
 ## Sneak Peak into our project : 
 Our application : https://drive.google.com/file/d/1ygvID8tDL43qfskiRosFyjiaHzdM7gx9/view?usp=sharing
+
 Our Website: https://aarushi31.github.io/GenMoney/
 
 
